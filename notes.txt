@@ -1,0 +1,80 @@
+read me files 
+
+# Garment ERP (PHP + MySQL)
+
+A lightweight ERP system for garment manufacturers, built with **PHP & MySQL**.  
+This project was developed as a **10-day MVP challenge** to learn ERP design and implementation.
+
+---
+
+## 🚀 Features
+- Role-based login (Admin, Merchandiser, Storekeeper, Production, Finance)
+- Buyers & Suppliers management
+- Orders with Bill of Materials (BOM)
+- Inventory (Stock In/Out, Current Stock Report)
+- Production tracking (Cutting, Sewing, Finishing)
+- Finance (Buyer & Supplier Invoices, Outstanding Reports)
+- Dashboard with key KPIs
+
+---
+
+## 📂 Folder Structure
+garment-erp/
+│── config/
+│   └── config.php          # DB connection (MySQL)
+│
+│── includes/
+│   ├── header.php          # Common header (Bootstrap, navigation, session check)
+│   ├── footer.php          # Common footer
+│   └── auth.php            # Login check & role handling
+│
+│── modules/
+│   ├── users/              # User management
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   └── register.php    # (optional, for admin to add users)
+│   │
+│   ├── buyers/             # Buyer management
+│   │   ├── index.php       # List buyers
+│   │   ├── add.php         # Add buyer
+│   │   └── edit.php        # Edit buyer
+│   │
+│   ├── suppliers/          # Supplier management
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── items/              # Inventory master
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── edit.php
+│   │
+│   ├── orders/             # Orders & BOM
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── bom.php
+│   │
+│   ├── stock/              # Stock transactions
+│   │   ├── stock_in.php
+│   │   ├── stock_out.php
+│   │   └── report.php
+│   │
+│   ├── production/         # Production tracking
+│   │   ├── index.php
+│   │   ├── add.php
+│   │   └── report.php
+│   │
+│   ├── finance/            # Finance (invoices)
+│   │   ├── buyer_invoices.php
+│   │   ├── supplier_invoices.php
+│   │   └── reports.php
+│
+│── public/
+│   ├── index.php           # Landing page (redirect to login)
+│   ├── dashboard.php       # Admin dashboard
+│   ├── css/                # Custom CSS
+│   ├── js/                 # Custom JS
+│   └── uploads/            # For file uploads (if needed)
+│
+│── .gitignore              # Ignore vendor, uploads, etc.
+│── README.md               # Documentation

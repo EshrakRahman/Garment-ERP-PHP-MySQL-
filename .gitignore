@@ -1,0 +1,27 @@
+# PHP
+*.log
+*.cache
+*.bak
+*.tmp
+
+# Composer (if you use it later)
+vendor/
+composer.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Public uploads
+public/uploads/
+
+# Node / frontend (if any)
+node_modules/
+
+# Database dumps (optional)
+*.sql
